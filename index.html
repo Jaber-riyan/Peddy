@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Adoption</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon" />
+    <!-- font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      .lato-font {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="lato-font">
+    <header class="w-11/12 mx-auto">
+      <nav class="mb-6">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a
+              class="btn btn-ghost text-xl flex items-center justify-center"
+              href="./index.html">
+              <img src="./images/logo.webp" alt="" />
+              <span class="md:text-3xl text-2xl font-[700]">Peddy</span>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu-horizontal px-1 space-x-7">
+              <li
+                class="hover:text-[#494949] text-[#737373] font-[700] text-[14px] cursor-pointer">
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:text-[#494949] text-[#737373] font-[700] text-[14px] cursor-pointer">
+                <a>Shop</a>
+              </li>
+              <li
+                class="hover:text-[#494949] text-[#737373] font-[700] text-[14px] cursor-pointer">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="md:block hidden py-3 px-5 rounded-full">
+              <img
+                class="w-10 h-10"
+                src="https://img.icons8.com/?size=100&id=fUUEbUbXhzOA&format=png&color=000000"
+                alt="" />
+            </button>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                <li
+                  class="hover:text-[#494949] text-[#737373] font-[700] text-[14px] cursor-pointer">
+                  <a>Home</a>
+                </li>
+                <li
+                  class="hover:text-[#494949] text-[#737373] font-[700] text-[14px] cursor-pointer">
+                  <a>Shop</a>
+                </li>
+                <li
+                  class="hover:text-[#494949] text-[#737373] font-[700] text-[14px] cursor-pointer">
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="text-center">
+        <h3 class="font-[900] mb-5 text-[1.1rem] text-[#13131399]">
+          Bringing Families Together ❤️‍🔥
+        </h3>
+        <h2 class="font-[900] md:text-6xl md:w-[60%] md:mx-auto mb-5 text-4xl">
+          Your Path to Adoption Starts Here
+        </h2>
+        <p class="text-[#131313] font-[400] mb-5 md:w-[60%] mx-auto">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+        <button
+          class="btn bg-[#0E7A81] text-white hover:text-black text-[1rem] font-[700]">
+          <a href="#main-section">View More</a>
+        </button>
+        <div class="flex justify-center">
+          <img src="./images/pet.webp" alt="" />
+        </div>
+      </header>
+    </header>
+    <main id="main-section" class="mb-20 w-11/12 mx-auto">
+      <!-- main section upper text start  -->
+      <div class="text-center mb-6">
+        <h2 class="text-[#131313] mb-6 font-[900] text-4xl">
+          Adopt Your Best Friend
+        </h2>
+        <p class="font-[400] text-[1rem] md:w-[50%] mx-auto">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+      </div>
+      <!-- main section upper text end  -->
+
+      <!-- categories section start  -->
+      <div
+        id="categories"
+        class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 justify-center items-center mb-6"></div>
+      <!-- categories section end  -->
+
+      <!-- all card section start  -->
+      <div>
+        <div class="flex justify-between mb-4 items-center">
+          <h3 class="font-[900] text-[#131313] text-[24px]">
+            Best Deal For you
+          </h3>
+          <button class="btn bg-[#0E7A81] text-white" id="sort-by-price-btn">
+            Sort by Price
+          </button>
+        </div>
+        <!-- loader section start  -->
+        <div id="loader" class="text-center hidden">
+          <span class="loading loading-dots loading-lg"></span>
+        </div>
+        <!-- loader section end -->
+        <div class="lg:flex gap-2 justify-center">
+          <div
+            id="pets-container"
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-x-2 lg:gapx-x-3 lg:w-[70%] border border-[#1313131A] rounded-xl p-2"></div>
+          <div id="fav-div" class="lg:w-[28%] border border-[#1313131A] p-3 rounded-xl mt-5">
+            <div
+              id="favorite-pets"
+              class="grid lg:grid-cols-2 gap-2 justify-center items-center"></div>
+          </div>
+        </div>
+      </div>
+      <!-- all card section end  -->
+    </main>
+
+    <!-- details modal code start  -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="details_pet" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="modal-data"></div>
+        <div class="">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+              class="btn w-full bg-[#0E7A811A] hover:bg-[#0E7A81] hover:text-white font-black text-[#0E7A81]">
+              Close
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <!-- details modal code end  -->
+
+    <!-- adopted modal code start  -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="adopt_pet" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="adopt-pet-data"></div>
+        <div class="modal-action">
+          <form method="dialog"></form>
+        </div>
+      </div>
+    </dialog>
+    <!-- adopted modal code end  -->
+
+    <!-- footer section start  -->
+    <footer class="footer bg-neutral text-neutral-content p-10 bg-[#131313]">
+      <nav>
+        <a
+          class="text-xl flex items-center justify-center gap-2 mb-2"
+          href="./index.html">
+          <img src="./images/logo.webp" alt="" />
+          <span class="md:text-3xl text-2xl font-[700] footer-title"
+            >Peddy</span
+          >
+        </a>
+        <a class="link link-hover">Location: av. Washington 165, NY CA 54003</a>
+        <a class="link link-hover">Phone: +31 85 964 47 25</a>
+        <a class="link link-hover">Email: info@yourdomain.com</a>
+        <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Useful Links</h6>
+        <a class="link link-hover">Home </a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Animals</a>
+        <a class="link link-hover">Foundation</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Drop a Message</h6>
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          class="input input-bordered w-full max-w-xs text-[#FFFFFF99] bg-[#FFFFFF0D] mt-8 mb-4" />
+        <button
+          class="btn bg-[#0E7A81] text-white hover:text-black text-[1rem] font-[700] w-full max-w-xs border-none rounded-xl">
+          Subscribe
+        </button>
+      </nav>
+    </footer>
+    <!-- footer section end  -->
+  </body>
+
+  <script src="./js/app.js"></script>
+</html>
